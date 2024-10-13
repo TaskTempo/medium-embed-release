@@ -359,6 +359,6 @@
     .catch((error) => {
       console.error("Error fetching Medium posts:", error);
       container.innerHTML =
-        "<p style='color: #ff0000;'>Error loading Medium posts. Please try again later.</p>";
+        "<p style='color: #ff0000;'>Error loading Medium posts. Please try again later or make sure the URL is not a 404 page.</p>";
     });
 })();
