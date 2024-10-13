@@ -91,7 +91,7 @@
           body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
         </style>
       </head>
-      <body class="bg-white p-6">
+      <body class="bg-white">
         <div class="max-w-2xl mx-auto">
           <h2 class="text-2xl font-bold mb-4 text-gray-900">Latest Medium Posts</h2>
           <ul class="list-none p-0">
