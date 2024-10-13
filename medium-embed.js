@@ -306,7 +306,6 @@
       </head>
       <body class="bg-white">
         <div class="w-full max-w-3xl mx-auto">
-          <h2 class="text-2xl font-bold mb-4 text-gray-900">Latest Medium Posts</h2>
           ${
             layout === "default"
               ? `<ul class="list-none p-0">${postsList}</ul>`
