@@ -12,10 +12,11 @@
   const layout = container.getAttribute("data-layout") || "default";
   const cardsPerRow =
     parseInt(container.getAttribute("data-cards-per-row")) || 2;
+  const fontFamily = container.getAttribute("data-font-family") || "inherit";
 
   // Create and display the loader
   container.innerHTML = `
-    <div id="medium-embed-loader" class="flex justify-center items-center" style="height: 100px;">
+    <div id="medium-embed-loader" class="flex justify-center items-center" style="height: 100px; font-family: ${fontFamily};">
       <p class="text-gray-700 font-semibold">Loading...</p>
     </div>
   `;
@@ -295,16 +296,16 @@
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?display=swap&family=Archivo:ital,wght@0,100;0,300;0,400;0,600;0,900;1,100;1,300;1,400;1,600;1,900" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
-          body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          body {
             margin: 0;
             padding: 0;
           }
         </style>
       </head>
-      <body class="bg-white">
+      <body class="bg-white" style="font-family: ${fontFamily};">
         <div class="w-full max-w-3xl mx-auto">
           ${
             layout === "default"
